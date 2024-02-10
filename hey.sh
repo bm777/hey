@@ -1,6 +1,6 @@
 #!/bin/bash
 
-COMMANDS_FILE="commands.toml"
+COMMANDS_FILE="/usr/local/bin/commands.toml"
 
 print_all_commands() {
     echo "All commands:"
