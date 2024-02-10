@@ -10,19 +10,10 @@ I use it for personal use, but I hope it can be useful for you too.
 
 To install Hey, follow these steps:
 
-1. Clone the repository:
+
 ```bash
 git clone https://github.com/bm777/hey.git
-```
-
-2. Change to the repository directory:
-```bash
 cd hey
-```
-
-3. Run the installation script:
-This will copy the `hey.sh` script to `/usr/local/bin`, making it accessible system-wide.
-```bash
 ./install.sh
 ```
 
