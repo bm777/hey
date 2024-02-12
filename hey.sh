@@ -23,12 +23,13 @@ print_commands() {
         exit 1
     fi
 
-    local value=$(grep -E "^$key" "$COMMANDS_FILE" | cut -d '=' -f2 | tr -d '"' | tr -d '[:space:]')
+    # local value=$(grep -E "^$key" "$COMMANDS_FILE" | cut -d '=' -f2 | tr -d '"' | tr -d '[:space:]')
+    local value=$(grep -E "^$key" "$COMMANDS_FILE")
 
     if [ -z "$value" ]; then
-        echo "Key '$key' not found."
+        echo "Command '$key' not found."
     else
-        echo "Value of key '$key': $value"
+        echo "$value"
     fi
 }
 
